@@ -52,7 +52,8 @@ export const SocketContextProvider = ({ children }) => {
         query: {
           userId: authUser._id,
         },
-        transports: ["websocket"]
+        transports: ["websocket"],
+         withCredentials: true,
       });
       // console.log("authUser", authUser);
 

@@ -15,6 +15,10 @@
         type:String,
         required:true,
     },
+   createdAt:{
+    type:Date,
+    default:Date.now,
+   }
         //createdAt, UpdatedAt
 },{timestamps:true});
 

@@ -33,9 +33,15 @@ const UseLogin = () => {
       console.log(res);
       const data = await res.json();
       console.log(data);
+<<<<<<< HEAD
         if (data.error) {
           throw new Error(data.error);
         }
+=======
+      if (data.error) {
+        throw new Error(data.error);
+      }
+>>>>>>> 1785735d383a4cb5191611a38213756b25e5c07b
 
       localStorage.setItem("chat-user", JSON.stringify(data));
       setAuthUser(data);

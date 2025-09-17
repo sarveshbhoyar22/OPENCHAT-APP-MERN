@@ -15,7 +15,10 @@ const useSendMessage = () => {
             })
 
             const data = await res.json()
+<<<<<<< HEAD
             // console.log("data:",data);
+=======
+>>>>>>> 1785735d383a4cb5191611a38213756b25e5c07b
             if(data.error){
                 throw new Error(data.error);
             }

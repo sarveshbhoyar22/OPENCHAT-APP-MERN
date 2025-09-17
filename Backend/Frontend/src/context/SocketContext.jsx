@@ -48,10 +48,19 @@ export const SocketContextProvider = ({ children }) => {
 
   useEffect(() => {
     if (authUser) {
+<<<<<<< HEAD
       const socket = io("http://localhost:5000", {
         query: {
           userId: authUser._id,
         },
+=======
+      const socket = io("import.meta.env.VITE_BASE_URL", {
+        query: {
+          userId: authUser._id,
+        },
+        transports: ["websocket"],
+         withCredentials: true,
+>>>>>>> 1785735d383a4cb5191611a38213756b25e5c07b
       });
       // console.log("authUser", authUser);
 
